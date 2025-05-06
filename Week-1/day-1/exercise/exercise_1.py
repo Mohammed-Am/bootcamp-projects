@@ -1,4 +1,3 @@
-"""
 ## Exercice 1
 print("Hello world")
 print("Hello world")
@@ -61,7 +60,7 @@ print(f"Number of Apples in the basket: {apple_count}")
 
  print(basket)
 
- """
+ 
 
  ## 8  Orders
 
