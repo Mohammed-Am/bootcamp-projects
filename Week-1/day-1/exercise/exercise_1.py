@@ -1,3 +1,4 @@
+"""
 ## Exercice 1
 print("Hello world")
 print("Hello world")
@@ -60,12 +61,15 @@ print(f"Number of Apples in the basket: {apple_count}")
 
  print(basket)
 
+ """
+
  ## 8  Orders
 
- sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"].
+ sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
 
 while "Pastrami sandwich" in sandwich_orders:
     sandwich_orders.remove("Pastrami sandwich")
 
 finished_sandwiches = []
-while sandwich_orders:andwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg
+
+
