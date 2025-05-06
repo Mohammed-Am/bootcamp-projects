@@ -28,7 +28,11 @@ my_fav_numbers = {14, 19 , 20}
 my_fav_numbers.add(20,25)
 my_fav_numbers.pop(4)
 friend_fav_number = {'0661716519','0678956315','0689547161'}
-our_fav_number = {my_fav_numbers + our_fav_number}
+our_fav_number = my_fav_numbers.union(friend_fav_number)
+
+
+
+
 
 ##6  tuple
 
@@ -38,7 +42,7 @@ my_tuple = (1, 2, 3)
 
 new_tuple = my_tuple + (4, 5)
 
-print(new_tuple)  #
+print(new_tuple)  
 
 
 
