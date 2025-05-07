@@ -1,21 +1,34 @@
 class Zoo:
     def __init__(self, zoo_name):
-        pass
+        self.zoo_name = zoo_name
+        self.animals = []
 
     def add_animal(self, new_animal):
-        pass
+        if new_animal not in self.animals:
+            self.animals.append(new_animal)
 
     def get_animals(self):
-        pass
+        print("Animals in the zoo:", self.animals)
 
     def sell_animal(self, animal_sold):
-        pass
+        if animal_sold in self.animals:
+            self.animals.remove(animal_sold)
 
     def sort_animals(self):
-        pass
+        self.animals.sort()
+        grouped_animals = {}
+        for animal in self.animals:
+            first_letter = animal[0].upper()
+            if first_letter not in grouped_animals:
+                grouped_animals[first_letter] = []
+            grouped_animals[first_letter].append(animal)
+        return grouped_animals
 
     def get_groups(self):
-        pass
+        grouped_animals = self.sort_animals()
+        for letter, group in grouped_animals.items():
+            print(f"{letter}: {group}")
+
 
 # Step 2: Create a Zoo instance
 ramat_gan_safari = Zoo("Ramat Gan Safari")
