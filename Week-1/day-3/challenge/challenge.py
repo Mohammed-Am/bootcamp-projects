@@ -25,7 +25,6 @@ class Farm:
         return f"{self.name}'s farm has {', '.join(formatted_animals[:-1])} and {formatted_animals[-1]}."
 
 
-# Test the code
 macdonald = Farm("McDonald")
 macdonald.add_animal('cow', 5)
 macdonald.add_animal('sheep')
