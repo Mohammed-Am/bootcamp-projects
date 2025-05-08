@@ -15,3 +15,8 @@ print(f"result of parimeter = {n.perimeter()}")
 print(f"result of area = {n.area()}")
 
 
+
+
+
+
+
