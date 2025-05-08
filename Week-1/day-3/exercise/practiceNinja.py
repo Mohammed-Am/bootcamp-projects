@@ -11,10 +11,10 @@ class Phone:
      def show_call_history(self , call_history):
         print(self.call_history)
 
-     def send_message(self, to , from , content):
+     ##def send_message(self, to , from , content):
 
 
-show_outgoing_messages(self), show_incoming_messages(self), show_messages_from(self)
+##show_outgoing_messages(self), show_incoming_messages(self), show_messages_from(self)
 
 
 
