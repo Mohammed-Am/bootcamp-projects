@@ -12,5 +12,6 @@ class Game:
      get_game_result(self, user_item, computer_item):
         self.user_item = user_item
         self.computer_item = computer_item
-        
+
+
           
