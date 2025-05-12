@@ -41,7 +41,11 @@ select * from students where birth_date >= '1/01/2000';
 select first_name from students where first_name like '%a_';
 
 
-
+-- exercise XP+
 	
-
-			
+--1
+select * from students ORDER BY last_name DESC  limit 4;
+--2
+select * from students ORDER BY birth_date limit 1;
+--3
+SELECT * FROM students LIMIT 3 OFFSET 2;
