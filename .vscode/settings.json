@@ -21,6 +21,17 @@
             "username": "postgres",
             "password": "kizon",
             "connectionTimeout": 30
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "PG  dvdrental",
+            "database": "dvdrental",
+            "username": "postgres",
+            "password": "kizon",
+            "connectionTimeout": 30
         }
     ]
 }
