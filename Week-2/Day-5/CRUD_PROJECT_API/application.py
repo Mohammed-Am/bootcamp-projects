@@ -18,8 +18,8 @@ class Drink(db.Model):
     def to_dict(self):
         return OrderedDict([
             ("id", self.id),
-            ("name", self.name),
-            ("description", self.description)
+            ("name drink", self.name),
+            ("description drink ", self.description)
         ])
 
 @app.route('/')
