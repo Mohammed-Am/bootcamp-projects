@@ -1,5 +1,6 @@
-  let pattern = ['*']
+  let pattern = []
 
 for(let i = 1 ; i <= 6 ; i++){
-    console.log(pattern[i])
+    pattern.splice(1,0,'*')
+    console.log(pattern.join(' '))
 }
