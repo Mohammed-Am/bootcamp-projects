@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Job Application Form</title>
+  <link rel="stylesheet" href="/Week-3/day-3/playaround/Form-Apply-Job/style.css">
+</head>
+<body>
+
+  <h2>Apply for an IT Job</h2>
+  <form id="jobForm" oninput="showPreview()">
+    
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label>First Name: <input type="text" id="firstName" name="firstName"></label>
+      <label>Last Name: <input type="text" id="lastName" name="lastName"></label>
+      <label>Email: <input type="email" id="email" name="email"></label>
+      <label>Phone Number: <input type="number" id="phone" name="number"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Other Information</legend>
+      <label>Choose Your Major:
+        <select id="major" name="major">
+          <option value="">-- Select Major --</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Machine Learning">Machine Learning</option>
+          <option value="Artificial Intelligence">Artificial Intelligence</option>
+          <option value="DevOps">DevOps</option>
+        </select>
+      </label>
+
+       <legend>Your Skills</legend>
+        <label><input type="checkbox" class="skill" value="HTML"> HTML</label>
+        <label><input type="checkbox" class="skill" value="CSS"> CSS</label>
+        <label><input type="checkbox" class="skill" value="JavaScript"> JavaScript</label>
+        <label><input type="checkbox" class="skill" value="React"> React</label>
+        <label><input type="checkbox" class="skill" value="Vue.js"> Vue.js</label>
+        <label><input type="checkbox" class="skill" value="Next.js"> Next.js</label>
+        <label><input type="checkbox" class="skill" value="UI Design"> UI Design</label>
+      
+      <label>Upload CV: <input type="file" id="cv" name="cv"></label>
+      <label>Portfolio Link: <input type="url" id="portfolio" name="portfolio"></label>
+    </fieldset>
+
+  <fieldset>
+      <legend>Preview</legend>
+      <div id="preview">
+        <p><strong>Name:</strong> <span id="pName"></span></p>
+        <p><strong>Email:</strong> <span id="pEmail"></span></p>
+        <p><strong>Portfolio:</strong> <span id="pPortfolio"></span></p>
+        <p><strong>Major:</strong> <span id="pMajor"></span></p>
+        <p><strong>Skills:</strong> <span id="pSkills"></span></p>
+      </div>
+    </fieldset>
+
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <script src="/Week-3/day-3/playaround/Form-Apply-Job/script.js"></script>
+
+</body>
+</html>
