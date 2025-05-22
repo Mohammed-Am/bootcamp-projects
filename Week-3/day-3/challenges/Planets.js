@@ -8,7 +8,6 @@ planetNames.forEach((name, index) => {
 
     const colors = ['gray', 'orange', 'blue', 'red', 'brown', 'goldenrod', 'lightblue', 'darkblue'];
     planet.style.backgroundColor = colors[index % colors.length];
-
     
 
     // Add a moon to Earth and Jupiter as examples
