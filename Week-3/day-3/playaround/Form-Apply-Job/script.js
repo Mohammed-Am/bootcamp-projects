@@ -2,7 +2,9 @@ const form = document.querySelector('form')
 document.getElementById('preview').style.display  = "none";
 
 
-form.addEventListener('submit', (e) =>{
+
+function doThis(e){
+
     e.preventDefault();
 
     const formData = new FormData(form);
@@ -15,5 +17,7 @@ form.addEventListener('submit', (e) =>{
 
 
 document.getElementById('preview').style.display  = "";
-})
+
+}
+
 

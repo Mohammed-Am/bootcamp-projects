@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The Chocolate </h2>
+        <h3> History of the chocolate </h3>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+    </article>
+
+
+
+    <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="firstname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lastname"><br><br>
+    <input type="submit" value="Submit" id="submit">
+    </form> 
+    <ul class="usersAnswer"></ul>
+
+
+
+    <script>
+        let h1 = document.querySelector('h1')
+        console.log(h1)
+
+
+
+        document.querySelectorAll('article p')[3]?.remove();
+        
+        let h3 = document.querySelector('h3')
+        h3.addEventListener('click', display)
+        function display(){
+            h3.style.display = 'none'
+        }
+
+
+        // add buttom and i style it when we click it
+        let article = document.querySelectorAll('article')
+
+        let addButton = document.createElement('button')
+         addButton.textContent = 'change bold'
+
+           article[0].appendChild(addButton)
+
+         let allP = document.querySelectorAll('p')
+        // Add an event listener (optional)
+        addButton.addEventListener('click', function() {
+                allP.forEach( p => {
+                    p.style.fontWeight = 'bold'; 
+                })        
+            });
+        
+
+
+     //working with forms
+    let formD = document.querySelector('form')
+    console.log(formD)
+
+
+     inputFname =  document.getElementById('fname')
+     inputLname =  document.getElementById('lname')
+     inputSubmit =  document.getElementById('submit')
+     console.log(inputFname,inputLname,inputSubmit)
+
+
+     inputFnameAttr = document.getElementsByName('firstname')
+     inputLnameAttr = document.getElementsByName('lastname')
+     console.log(inputFnameAttr,inputLnameAttr)
+
+    
+     inputSubmit.addEventListener('click' , (event)=>{
+        event.preventDefault() // to not refresh to the page when we click to the button
+       let FnameValue = inputFnameAttr[0].value.trim()
+       let  LnameValue = inputLnameAttr[0].value.trim()
+        
+        if((FnameValue === '' ) || (LnameValue === '') ){
+            let error = 'please enter your name'
+            alert(error)
+             return;
+        }
+
+        let li1 = document.createElement('li');
+        let li2 = document.createElement('li'); 
+        li1.textContent = FnameValue;
+        li2.textContent = LnameValue;
+        inputFname.value = "";
+        inputLname.value = "";
+
+        let ul = document.querySelector('.usersAnswer');
+        ul.appendChild(li1);
+        ul.appendChild(li2);        
+        
+        formD.appendChild(li);
+     
+    })
+
+
+
+    </script>
+
+</body>
+</html>
