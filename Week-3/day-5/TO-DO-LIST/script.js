@@ -56,6 +56,9 @@ function addTask(e){
             list.appendChild(li);
         });
     }
+
+
+    //still i improve it in UI and add delete fanctunality
 }
 
 
