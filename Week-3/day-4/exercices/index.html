@@ -113,21 +113,25 @@
     })
 
 
-let allBoldItems = function getBoldItems(){
+function getBoldItems(){
         return document.querySelectorAll('p strong');
 }
+const boldItems = getBoldItems();
 
-function highlight(){
-         document.querySelectorAll('p strong').style.color = 'blue'
+function highlight(event){
+    //this dyal kola  element ratjib dom dyalha F NodeList
+         this.style.color = 'blue'
 }
-function returnItemsToDefault(){
-         document.querySelectorAll('p strong').style.color = 'black'
+function returnItemsToDefault(event){
+        this.style.color = 'black'
 
 }
-allBoldItems.addEventListener('mouseover',highlight )
-allBoldItems.addEventListener('mouseout ',returnItemsToDefault )
 
-
+//!!! still thinking how i can use function to access To THe DOM : i use forEach to have accessec to each element
+boldItems.forEach(item => {
+  item.addEventListener('mouseover', highlight);
+  item.addEventListener('mouseout', returnItemsToDefault);
+});
 
 
     </script>
