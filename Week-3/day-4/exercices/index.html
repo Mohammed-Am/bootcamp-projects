@@ -31,6 +31,10 @@
     </form> 
     <ul class="usersAnswer"></ul>
 
+    <p><strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
+    <strong>end</strong> you <strong>will</strong> be great Developers!
+    <strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
+
 
 
     <script>
@@ -107,6 +111,22 @@
         formD.appendChild(li);
      
     })
+
+
+let allBoldItems = function getBoldItems(){
+        return document.querySelectorAll('p strong');
+}
+
+function highlight(){
+         document.querySelectorAll('p strong').style.color = 'blue'
+}
+function returnItemsToDefault(){
+         document.querySelectorAll('p strong').style.color = 'black'
+
+}
+allBoldItems.addEventListener('mouseover',highlight )
+allBoldItems.addEventListener('mouseout ',returnItemsToDefault )
+
 
 
 
