@@ -1,0 +1,25 @@
+body{
+    background-color: red;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#uiError{
+    background-color: aliceblue;
+    width: 50%;
+      text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
