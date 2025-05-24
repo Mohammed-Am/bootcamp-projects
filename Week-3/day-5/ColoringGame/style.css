@@ -1,3 +1,0 @@
-.color-grid {
-    grid-template-columns: repeat(auto-fill,mimax(150px , 12fr));
-}
