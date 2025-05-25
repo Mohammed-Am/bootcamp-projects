@@ -1,4 +1,4 @@
-const numbers = [5,0,9,1,7,4,2,6,3,8];
+const numbers = [5,0,9,1,7,4,2,6,3,9];
 
 let convert = numbers.toString()
 console.log(convert)
@@ -13,9 +13,18 @@ console.log(join3)
 
 
 // thinking how to use bubble sort to solve this task
-for(let i = 0 ; i < numbers  ; i++){
-   // console.log("test " + numbers[i])
+
+// declare new array to order the number in side it 
+let newNumbers = []
+for(let i = 0 ; i < numbers.length  ; i++){
+    for(let j =0 ; j < numbers.length ; j++){
+        if(numbers[i] = numbers[j]){
+            newNumbers += numbers[j]
+        }
+    }
 }
+
+console.log(newNumbers)
 
 
 
