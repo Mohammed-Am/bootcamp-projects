@@ -39,14 +39,14 @@ function funcFour() {
 }
 
 
-function funcFive() {
+/*function funcFive() {
     alert(`inside the funcFive function ${a}`);
 }
 
 // #3.1 - run in the console:
 funcFour() // give value of 'hello'
 funcFive() // allert `inside the funcFive function Hello`
-
+*/
 //#4
 let c= 1;
 function funcSix() {
@@ -85,3 +85,117 @@ winBattle = () => true;
 let experiencePoints = winBattle ? 10 : 1
 
 console.log(experiencePoints)
+
+
+
+//Ex 3
+
+isString = (arg)=>{
+    if(typeof arg === "string"){
+        return true
+    }else{
+        return false
+    }
+}
+
+console.log(isString('hello')); 
+//true
+console.log(isString([1, 2, 4, 0]));
+//false
+
+
+//Ex4
+let sum = (a,b)=> a+b
+console.log(sum(5,5))
+
+//Ex5
+
+// -> function declaration
+// function declaration we should defiend function keyword first and then cell function name
+ 
+function convortToGrams(wightKiligrams){
+      let calcule = wightKiligrams * 1000
+
+      return calcule
+}
+console.log(`${convortToGrams(1)} grams `)
+
+// -> function expression
+// we declare function inside varibal name and than invoke the name varible and give it a paramiter 
+let calcul = function convort(w){
+     return w * 1000;
+}
+console.log(`${calcul(1)} grams `);
+
+// arrow function
+let calculWight = (num) => num * 1000;
+console.log(calculWight(10));
+
+
+
+// Exercise 6
+//IIFE
+(function(numberChildren,partnerNmae,geographic,jobTitle){
+    let body = document.body;
+     let p = document.createElement('p');
+     p.innerHTML = `You will be a ${jobTitle} in ${geographic}, and married to ${partnerNmae} with ${numberChildren} kids.`;
+     body.appendChild(p);
+
+}('2' , '!!S' , '!!!G' , 'fullStack developer'));
+
+
+//Ex7: Welcome
+
+(function(nameUser){
+    let nav = document.querySelector('nav');
+    let div = document.createElement('div');
+    div.innerHTML = `
+                    <h3> Welcome ${nameUser}</h3>
+                    <img src= 'https://mohammed-amouzoun-portfolio.pages.dev/assets/images/ME.png'width="50" height="60"> 
+                    `;
+    nav.appendChild(div);
+
+
+}('Mohammed'));
+
+
+//Ex 8 - Juice Bar
+
+//Part 1
+function  makeJuice(size){
+       let  ingredients = [];
+
+
+
+
+
+   function addIngredients(firstIngredient , secondIngredient , thirdIngredient){
+        let divIngridiant = document.getElementById('ingradient');
+        let ul = document.createElement('ul')
+        ul.innerHTML = `<li>The client wants a ${size} juice, containing ${firstIngredient}, ${secondIngredient}, ${thirdIngredient}</li>`
+        divIngridiant.appendChild(ul)
+
+        ingredients.push(firstIngredient,secondIngredient,thirdIngredient)
+
+         console.log(ingredients)
+
+
+        }
+ //Part 2
+    function displayJuice(){
+            addIngredients('Lbanan' , 'tfa7' , 'limon')
+            addIngredients('L5o5' , 'kiwi' , 'limon')
+
+    }     
+
+    displayJuice()
+
+
+
+}
+
+makeJuice('medium')
+
+
+
+
