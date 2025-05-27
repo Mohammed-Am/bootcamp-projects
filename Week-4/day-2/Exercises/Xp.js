@@ -15,25 +15,11 @@ if(colors[colors.length - 1 ] === colors.includes('Violet')){
 const colors2 = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 const ordinal = ["th","st","nd","rd"];
 
-colors2.forEach((color , index ) => {
-               // Determine the correct ordinal suffix
-                let suffix;
-                if (index + 1 === 1 || (index + 1) % 10 === 1 && (index + 1) !== 11) {
-                    suffix = ordinal[1]; // "st"
-                } else if (index + 1 === 2 || (index + 1) % 10 === 2 && (index + 1) !== 12) {
-                    suffix = ordinal[2]; // "nd"
-                } else if (index + 1 === 3 || (index + 1) % 10 === 3 && (index + 1) !== 13) {
-                    suffix = ordinal[3]; // "rd"
-                } else {
-                    suffix = ordinal[0]; // "th"
-  }
-       
-              console.log(`${index +1 }${suffix} choice is ${color}`)
-         
-
-
-    
-})
+colors.forEach((color, i) => {
+  const n = i + 1;
+  const suffix = (n >= 11 && n <= 13) ? "th" : ordinal[n] || "th";
+  console.log(`${n}${suffix} choice is ${color}`);
+});
 
 
 
@@ -120,5 +106,5 @@ const users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Res
         console.log(names)
 
         names.forEach((name , key)=>{
-                    console.log(`🎉Good job ${name}, you passed the course in ${passed[key].course}`)
+                    console.log(`Good job ${name}, you passed the course in ${passed[key].course}`)
         })
