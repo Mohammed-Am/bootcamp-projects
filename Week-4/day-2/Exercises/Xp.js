@@ -120,5 +120,5 @@ const users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Res
         console.log(names)
 
         names.forEach((name , key)=>{
-                    console.log(`🎉Good job ${name}, you passed the course in ${students[key]}`)
+                    console.log(`🎉Good job ${name}, you passed the course in ${passed[key].course}`)
         })
