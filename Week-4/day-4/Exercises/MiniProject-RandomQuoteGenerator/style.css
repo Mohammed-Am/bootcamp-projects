@@ -1,0 +1,101 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif; /* Matches the serif font in the image */
+    }
+
+    body {
+      background-color: #b09f98; /* Light beige/gray background from the image */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Button styling */
+    #btn {
+      background-color: #1abc9c; /* Teal background */
+      color: white;
+      border: 2px solid #3498db; /* Blue border */
+      padding: 10px 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    #btn:hover {
+      background-color: #16a085; /* Slightly darker teal on hover */
+    }
+
+    /* Quote container */
+    section {
+      background-color: #d8cecc;
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      border: 1px solid #d3d3d3; /* Subtle border */
+      position: relative;
+      text-align: center;
+    }
+
+    /* Quote text */
+    section p {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #4a4a4a; /* Dark gray */
+      line-height: 1.4;
+      position: relative;
+      padding-left: 40px; /* Space for quotation marks */
+      text-align: left;
+    }
+
+    /* Large quotation marks */
+    section p::before {
+      content: '“';
+      position: absolute;
+      left: 0;
+      top: -10px;
+      font-size: 4em;
+      color: #4a4a4a;
+      line-height: 1;
+    }
+
+    /* Author styling */
+    section p::after {
+      content: attr(data-author);
+      display: block;
+      font-size: 1em;
+      font-weight: normal;
+      font-style: italic;
+      color: #82bfbe; /* Teal */
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      section {
+        padding: 20px;
+      }
+
+      section p {
+        font-size: 1.2em;
+        padding-left: 30px;
+      }
+
+      section p::before {
+        font-size: 3em;
+        top: -5px;
+      }
+
+      #btn {
+        padding: 8px 16px;
+        font-size: 1em;
+      }
+    }
