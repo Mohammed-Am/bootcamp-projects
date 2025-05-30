@@ -1,0 +1,52 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3299fe;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.conatiner{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+   background-color: #1a80e7;
+    color: #ffffff;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
