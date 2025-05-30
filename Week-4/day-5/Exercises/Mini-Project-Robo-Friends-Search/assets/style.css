@@ -1,0 +1,82 @@
+@font-face{
+    font-family: myFont;
+    src:url(/Week-4/day-5/Exercises/Mini-Project-Robo-Friends-Search/assets/font/sega/SEGA.TTF);
+}
+
+
+
+body{
+    margin: 0;
+        background-image: url('/Week-4/day-5/Exercises/Mini-Project-Robo-Friends-Search/assets/images/circuit-pattern.png');
+
+}
+
+nav{
+    background-color: #69df81;
+    display: flex;
+    padding-left: 55px;
+    font-family: myFont;
+    
+
+
+}
+nav input{
+    width:55%;
+    height: 25px;
+    margin-top: 15px;
+    background-color: #c9d6e6;
+    border: none;
+    margin-left: 55px;
+}
+
+
+
+
+
+.container{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 15px;
+      padding: 20px; 
+      justify-content: center;    
+     
+      
+}
+
+.card {
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 100%; 
+    max-width: 300px; 
+
+    
+
+    background-color: #4fbcc1 ;
+    background-image: url('/Week-4/day-5/Exercises/Mini-Project-Robo-Friends-Search/assets/images/card-pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    background-color: #2f3952;
+    border-radius: 50%;
+
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    
+}
+
+.card p {
+    color: #555;
+}
