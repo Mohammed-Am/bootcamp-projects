@@ -22,14 +22,14 @@ function sortWords(upperWords) {
 makeAllCaps([1, "pear", "banana"])
     .then((arr) => sortWords(arr))
     .then((result) => console.log(result))
-    .catch(error => console.log(error)); // Outputs: All elements must be strings
+    .catch(error => console.log(error)); 
 
 makeAllCaps(["apple", "pear", "banana"])
     .then((arr) => sortWords(arr))
     .then((result) => console.log(result))
-    .catch(error => console.log(error)); // Outputs: Array length must be greater than 4
+    .catch(error => console.log(error)); 
 
 makeAllCaps(["apple", "pear", "banana", "melon", "kiwi"])
     .then((arr) => sortWords(arr))
-    .then((result) => console.log(result)) // Outputs: ["APPLE", "BANANA", "KIWI", "MELON", "PEAR"]
+    .then((result) => console.log(result))
     .catch(error => console.log(error));

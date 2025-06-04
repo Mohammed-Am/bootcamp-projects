@@ -22,7 +22,7 @@ function toJs() {
         } catch (error) {
             reject('Invalid JSON string');
         }
-    });
+    });//rejeccted
 }
 
 function toMorse(morseJS) {
