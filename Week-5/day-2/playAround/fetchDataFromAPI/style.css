@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #27292c;
+    color: white;
+    text-align: center;
+}
+
+img {
+    max-width: 500px
+}
+
+#random-images{
+    display: grid;
+    grid-template-columns: max-content(50%);
+    place-items:center;
+   
+}
