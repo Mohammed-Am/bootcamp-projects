@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+     <link rel="stylesheet" href="/Week-5/day-3/challenge/style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Currency Converter</h1>
+        
+       
+        <form id="converterForm">
+            
+
+            <div class="currency-row">
+                <div class="currency-group">
+                    <label for="fromCurrency">From:</label>
+                    <select id="fromCurrency" required>
+                        <option value="">Loading currencies...</option>
+                    </select>
+                </div>
+
+                <button type="button" class="switch-btn" id="switchBtn" title="Switch currencies">
+                    ⇄
+                </button>
+
+                <div class="currency-group">
+                    <label for="toCurrency">To:</label>
+                    <select id="toCurrency" required>
+                        <option value="">Loading currencies...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" min="0" step="0.01" value="1" required>
+            </div>
+
+            <button type="submit" class="convert-btn" id="convertBtn">Convert</button>
+        </form>
+
+        <div class="result" id="result">
+            <div class="result-amount" id="resultAmount"></div>
+            <div class="result-rate" id="resultRate"></div>
+        </div>
+
+        <div class="error" id="error"></div>
+        <div class="loading" id="loading" style="display: none;">Converting...</div>
+    </div>
+
+    <script src="/Week-5/day-3/challenge/main.js"></script>
+</body>
+</html>
