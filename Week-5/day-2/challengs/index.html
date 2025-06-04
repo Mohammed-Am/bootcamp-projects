@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy API Random GIF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #gifContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gif-item {
+            position: relative;
+        }
+        .gif-item img {
+            max-width: 200px;
+            height: auto;
+        }
+        .delete-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+        }
+        #deleteAllBtn {
+            background-color: darkred;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search for a Random GIF</h1>
+    <form id="gifForm">
+        <input type="text" id="searchInput" placeholder="Enter a category (e.g., sun)" required>
+        <button type="submit">Search GIF</button>
+    </form>
+    <button id="deleteAllBtn">Delete All GIFs</button>
+    <div id="gifContainer"></div>
+    <script src="/Week-5/day-2/challengs/xp.js"></script>
+</body>
+</html>
