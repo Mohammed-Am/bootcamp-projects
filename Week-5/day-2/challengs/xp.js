@@ -1,4 +1,3 @@
-// Select DOM elements
 const form  =  document.getElementById('gifForm');
 const searchInput = document.getElementById('searchInput');
 const gifContainer = document.getElementById('gifContainer');
