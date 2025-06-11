@@ -1,20 +1,20 @@
 function compareToTen(num){
-      return new Promise((resolve,rejects) => {
-        let check = num <= 10;
-          if(check){
-            resolve('true')
+      return new Promise((resolve,reject) => {
+       
+          if(num <= 10){
+            resolve(`Number ${num} is less than or equal to 10`)
           }else {
-            rejects('false')
+            reject(`Number ${num} is greater than 10`)
           }       
       })
 }
 compareToTen(15)
   .then(result => console.log(result))
   .catch(error => console.log(error))
+
   compareToTen(8)
   .then(result => console.log(result))
   .catch(error => console.log(error))
-
 
   //ex2
 
@@ -31,7 +31,7 @@ compareToTen(15)
       })
      
 
-  //ex
+  //ex3
 
 
     const promise1 = Promise.resolve(3)
@@ -44,3 +44,4 @@ compareToTen(15)
     promise2.catch((err) =>{
         console.log(err)
     })
+        
