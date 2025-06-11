@@ -37,6 +37,10 @@ async function fetchStarship() {
     console.error("Exercise 3 Error:", error);
   }
 }
+fetchHilariousGifs(); 
+fetchSunGifs(); 
+fetchStarship(); 
+
 
 //Ex4: 
 function resolveAfter2Seconds() {
@@ -48,14 +52,12 @@ function resolveAfter2Seconds() {
 }
 
 async function asyncCall() {
-  console.log("Exercise 4 Output: calling");
+  console.log("calling");
   let result = await resolveAfter2Seconds();
-  console.log("Exercise 4 Output:", result);
+  console.log(result);
 }
 
 
-console.log("Starting Exercises...");
-fetchHilariousGifs(); 
-fetchSunGifs(); 
-fetchStarship(); 
-asyncCall(); 
+
+
+asyncCall(); // give us -> resolved
