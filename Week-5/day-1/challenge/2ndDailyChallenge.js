@@ -22,7 +22,7 @@ function toJs() {
         } catch (error) {
             reject('Invalid JSON string');
         }
-    });//rejeccted
+    });
 }
 
 function toMorse(morseJS) {
@@ -49,7 +49,6 @@ function joinWords(morseTranslation) {
     return output;
 }
 
-// Chain the functions
 toJs()
     .then(morseObj => toMorse(morseObj))
     .then(translation => joinWords(translation))

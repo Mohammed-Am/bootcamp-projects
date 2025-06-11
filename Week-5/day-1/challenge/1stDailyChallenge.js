@@ -18,7 +18,8 @@ function sortWords(upperWords) {
     });
 }
 
-// Test cases
+// Testing
+/*
 makeAllCaps([1, "pear", "banana"])
     .then((arr) => sortWords(arr))
     .then((result) => console.log(result))
@@ -30,6 +31,12 @@ makeAllCaps(["apple", "pear", "banana"])
     .catch(error => console.log(error)); 
 
 makeAllCaps(["apple", "pear", "banana", "melon", "kiwi"])
+    .then((arr) => sortWords(arr))
+    .then((result) => console.log(result))
+    .catch(error => console.log(error));
+*/
+
+makeAllCaps(["cucumber", "tomatos", "avocado" , "kiwi" , "banana"])
     .then((arr) => sortWords(arr))
     .then((result) => console.log(result))
     .catch(error => console.log(error));
