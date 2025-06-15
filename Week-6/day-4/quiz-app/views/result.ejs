@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="home-bg">
+    <div class="container result-container">
+      <div class="result-emoji <%= score/total > 0.6 ? 'happy' : 'neutral' %>">
+        <% if (typeof score !== 'undefined' && typeof total !== 'undefined') { %>
+          <% if (score/total > 0.6) { %>
+            🎉
+          <% } else { %>
+            🙂
+          <% } %>
+        <% } else { %>
+          ❓
+        <% } %>
+      </div>
+      <h1>Quiz Result</h1>
+      <p class="score-message">
+        <% if (typeof score !== 'undefined' && typeof total !== 'undefined') { %>
+          <% if (score/total > 0.6) { %>
+            Congratulations! You scored <%= score %> out of <%= total %>!
+          <% } else { %>
+            Good try! You scored <%= score %> out of <%= total %>. Play again to improve!
+          <% } %>
+        <% } else { %>
+          Your results will be shown here.
+        <% } %>
+      </p>
+      <a href="/" class="btn play-again">Play Again</a>
+    </div>
+  </div>
+</body>
+</html>

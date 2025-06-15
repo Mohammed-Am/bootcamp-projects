@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="home-bg">
+    <div class="container home-container">
+      <h1>Welcome to the Interactive Quiz App! <span class="wave">👋</span></h1>
+      <p class="subtitle">Test your knowledge with fun quizzes. Ready to begin?</p>
+      <h2>Categories</h2>
+      <div class="categories">
+        <% categories.forEach(function(category) { %>
+          <span class="category-badge"><%= category.name %></span>
+        <% }); %>
+      </div>
+      <h2>Quizzes</h2>
+      <div class="quiz-list">
+        <% quizzes.forEach(function(quiz) { %>
+          <a href="/quiz/<%= quiz.id %>" class="quiz-card">
+            <div class="quiz-title"><%= quiz.title %></div>
+           <!-- <div class="quiz-desc"><%= quiz.description || 'No description' %></div>-->
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

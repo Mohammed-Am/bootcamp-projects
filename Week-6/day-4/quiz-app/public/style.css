@@ -1,0 +1,208 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+}
+
+.home-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #0097e6 0%, #4078c0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+h1 {
+  color: #273c75;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+@keyframes wave {
+  0% { transform: rotate(0deg);}
+  10% { transform: rotate(14deg);}
+  20% { transform: rotate(-8deg);}
+  30% { transform: rotate(14deg);}
+  40% { transform: rotate(-4deg);}
+  50% { transform: rotate(10deg);}
+  60% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
+
+.subtitle {
+  color: #353b48;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.category-badge {
+  background: #f1c40f;
+  color: #273c75;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(241,196,15,0.08);
+}
+
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.quiz-card {
+  background: #f5f6fa;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+  padding: 1.2rem 1rem;
+  text-align: left;
+  width: 200px;
+  text-decoration: none;
+  color: #273c75;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quiz-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,151,230,0.18);
+  background: #fff;
+}
+
+.quiz-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.quiz-desc {
+  font-size: 0.98rem;
+  color: #636e72;
+}
+
+
+
+/* Quiz and Result Page Enhancements */
+.quiz-container, .result-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.question-emoji {
+  font-size: 2.2rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  animation: bounce 1.2s infinite alternate;
+}
+@keyframes bounce {
+  to { transform: translateY(-8px); }
+}
+
+.progress-bar {
+  background: #e1e8ed;
+  border-radius: 1rem;
+  height: 12px;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+}
+.progress {
+  background: linear-gradient(90deg, #0097e6 60%, #f1c40f 100%);
+  height: 100%;
+  transition: width 0.4s cubic-bezier(.4,2,.6,1);
+}
+
+.quiz-submit {
+  margin-top: 1.5rem;
+  background: #f1c40f;
+  color: #273c75;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+.quiz-submit:hover {
+  background: #0097e6;
+  color: #fff;
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.result-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: pop-in 0.7s cubic-bezier(.4,2,.6,1);
+}
+@keyframes pop-in {
+  0% { transform: scale(0.2); opacity: 0; }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.result-emoji.happy { filter: drop-shadow(0 0 8px #f1c40f); }
+.result-emoji.neutral { filter: grayscale(0.3); }
+
+.play-again {
+  background: #f1c40f;
+  color: #273c75;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.play-again:hover {
+  background: #0097e6;
+  color: #fff;
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.score-message {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.question-block {
+  margin-bottom: 2.2rem;
+  text-align: left;
+  background: #f5f6fa;
+  border-radius: 0.8rem;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+}
+
+@media (max-width: 600px) {
+  .quiz-container, .result-container {
+    padding: 1.2rem 0.5rem;
+    max-width: 95vw;
+  }
+  .result-emoji {
+    font-size: 2.5rem;
+  }
+} 
