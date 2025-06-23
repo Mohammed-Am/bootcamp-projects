@@ -17,7 +17,7 @@ function App() {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
-      ...prevData,
+        ...prevData,
       [name]: type === 'checkbox' ? checked : value,
     }));
   };
@@ -34,7 +34,10 @@ function App() {
       ...(formData.lactoseFree && { lactoseFree: 'on' }),
       ...(formData.vegan && { vegan: 'on' }),
     }).toString();
-    window.location.href = `http://localhost:3000/?${queryParams}`;
+
+       window.location.href = `http://localhost:3000/?${queryParams}`;
+
+
   };
 
   return (

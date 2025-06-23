@@ -1,4 +1,3 @@
-import React from 'react';
 
 const FormComponent = ({ formData, handleChange, handleSubmit }) => {
   return (
