@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Apple iPhone 14 Pro Max (256GB, Deep Purple)",
+        "img": "https://m.media-amazon.com/images/I/61nzPMNY8zL._AC_SL1500_.jpg",
+        "price": 1199,
+        "instedOff": 1299,
+        "rate": 5
+    },
+    {
+        "title": "Samsung Galaxy S23 Ultra (512GB, Phantom Black)",
+        "img": "https://m.media-amazon.com/images/I/71Sa3dqTqzL._AC_SL1500_.jpg",
+        "price": 1099,
+        "instedOff": 1199,
+        "rate": 4
+    },
+    {
+        "title": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+        "img": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg",
+        "price": 348,
+        "instedOff": 399,
+        "rate": 5
+    },
+    {
+        "title": "Apple MacBook Air Laptop M2 chip (13-inch, 8GB RAM, 256GB SSD)",
+        "img": "https://m.media-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg",
+        "price": 1049,
+        "instedOff": 1199,
+        "rate": 5
+    },
+    {
+        "title": "ASUS ROG Strix G16 (2023) Gaming Laptop",
+        "img": "https://m.media-amazon.com/images/I/81lDOtJRTkL._AC_SL1500_.jpg",
+        "price": 1499,
+        "instedOff": 1699,
+        "rate": 4
+    },
+    {
+        "title": "Canon EOS R50 Mirrorless Camera with RF-S18-45mm Lens",
+        "img": "https://m.media-amazon.com/images/I/81p1L85KinL._AC_SL1500_.jpg",
+        "price": 799,
+        "instedOff": 899,
+        "rate": 4
+    }
+ 
+]
